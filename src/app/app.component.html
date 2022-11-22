@@ -7,6 +7,13 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<h1>Hello</h1>
+<div>
+  <app-masuno minimo="1" maximo="10" #selector1></app-masuno>
+  <br>
+  <button (click)="selector1.fijar(1)">Fijar en 1</button><br>
+  <button (click)="selector1.fijar(5)">Fijar en 5</button><br>
+  <button (click)="selector1.fijar(10)">Fijar en 10</button><br>
+</div>
+
 
 <router-outlet></router-outlet>
